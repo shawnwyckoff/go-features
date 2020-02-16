@@ -5,13 +5,13 @@ import (
 	"sort"
 )
 
-type Student struct {
+type Student2 struct {
 	Name string
 	Age  int
 }
 
 type StudentSet struct {
-	Items []Student
+	Items []Student2
 }
 
 func (ss StudentSet) Len() int {
@@ -28,11 +28,11 @@ func (ss StudentSet) Less(i, j int) bool {
 
 func main() {
 	ss := StudentSet{}
-	ss.Items = append(ss.Items, Student{Name: "Tom", Age: 10})
-	ss.Items = append(ss.Items, Student{Name: "Jerry", Age: 12})
-	ss.Items = append(ss.Items, Student{Name: "David", Age: 11})
-	ss.Items = append(ss.Items, Student{Name: "Elon", Age: 9})
-	ss.Items = append(ss.Items, Student{Name: "Satoshi", Age: 13})
+	ss.Items = append(ss.Items, Student2{Name: "Tom", Age: 10})
+	ss.Items = append(ss.Items, Student2{Name: "Jerry", Age: 12})
+	ss.Items = append(ss.Items, Student2{Name: "David", Age: 11})
+	ss.Items = append(ss.Items, Student2{Name: "Elon", Age: 9})
+	ss.Items = append(ss.Items, Student2{Name: "Satoshi", Age: 13})
 	sort.Sort(ss)
 
 	fmt.Println(ss)
