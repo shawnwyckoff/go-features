@@ -1,4 +1,4 @@
-# go-features
+# 《Go避坑笔记》
 Examples to show go language grammar pits.
 
 # usage
